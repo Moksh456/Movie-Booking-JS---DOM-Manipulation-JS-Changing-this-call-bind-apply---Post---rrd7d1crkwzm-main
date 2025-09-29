@@ -132,10 +132,6 @@ const renderMovieTheatre = (event) => {
         // render Theatre layout view
         renderTheatreLayout(listOfUnavailableSeats);
         renderTheatreLayout(listOfUnavailableSeats, 13);
-
-
-
-
     })
 }
 
@@ -151,6 +147,7 @@ const renderMoviesList = async () => {
         const movieElement = convertToHtmlDom(`<a class="movie-link" href="/${movie.name}">
         <div class="movie" data-id=${movie.name}>
         <div class="movie-img-wrapper" style="background-image: url(${movie.imgUrl});">
+
         </div>
         <h4>${movie.name}</h4>
         </div>
