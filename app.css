@@ -1,89 +1,372 @@
-* {
-    margin: 0;
+
+
+html,head{
+    background-color: #000000;
+    color: rgb(255, 196, 0);
+    background-image: url(assets/thunderstorm-countryside.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+    overflow-x:hidden;
+}
+body{
+      margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-size: 200% 200%;
+  animation: bgMove 12s ease-in-out infinite;
+  color: #ffffff;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*{
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
+    box-sizing: border-box; 
 }
-
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: blue;
-    color: white;
-    padding: 12px 16px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    width: 50%;
-    justify-content: space-around;
-}
-
-.movie-img-wrapper {
-    background-size: cover;
-    width: 150px;
-    height: 200px;
-}
-
-.movie-holder {
-    display: flex;
-    justify-content: space-around;
-}
-
-.loader {
-    text-align: center;
-    margin: 1rem;
-}
-
-
 
 .d-none {
     display: none;
 }
 
-.v-none {
-    visibility: hidden;
+.v-none{
+    visibility:hidden;
 }
 
-.booking-grid {
+
+nav{
+   background: #000000;
+    border-bottom: 1px solid #000000;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    min-width: 0;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+        display: flex
+;
+    justify-content: space-around;
+    width: 725px;
+    align-items: center;
+    cursor:pointer;
+    transition: ease-out 0.5s;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+nav ul *:hover{
+    transform: scale(1.5);
+    transition: ease-in 0.3s;
+ color: red;
+ 
+}
+
+.loader{
+  margin-top: 150px;
+    
+}
+
+.movieHolder{
+    display: flex;
+    justify-content: space-around;
+        margin-top: 89px;
+        flex-wrap: wrap;
+        gap: 50px;
+            margin-left: 60px;
+    margin-right: 60px;
+    color: gold;
+}
+
+
+
+.movie-img-wrapper {
+          height: 297px;
+    width: 249px;
+    background-size: cover;
+    background-color: black;
+}
+
+
+
+.booking-grid{
     display: grid;
     grid-template-rows: repeat(3, 70px);
     grid-template-columns: repeat(4, 70px);
     gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-#booker {
+#booker{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3rem;
+    gap: 44px;
+    margin-top: 75px;
 }
 
-#booker-grid-holder {
-    margin: 2rem;
+#booker-grid-holder{
     display: flex;
-    gap: 6rem;
+    gap: 5rem;
 }
 
-.grid-cell {
-    color: white;
+.grid-cell{
+    border: 1px solid rgb(143, 7, 7);
+    background-color: rgb(109, 170, 109);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 20px;
 }
 
-.unavailable-seat {
+.unavailable-seat{
     background-color: red;
     cursor: not-allowed;
     pointer-events: none;
 }
 
-.available-seat {
+.available-seat{
     background-color: green;
-    cursor: pointer;
 }
 
-.selected-seat {
-    border: 4px outset rgb(0, 0, 0)
+.selected-seat{
+   border: solid black 6px;
+}
+
+a{
+    color: white;
+    font-style:italic;
+    font-style: remove;
+}
+.header{
+        text-align: center;
+    margin-top: 59px;
+    color: red;
+        text-align: center;
+    margin-top: 0;
+       margin-top: 66px;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.movie-ele{
+        background: rgb(0, 0, 0);
+    height: auto;
+    width: 284px;
+    cursor: pointer;
+    border: 2px solid gray ;
+    border: 18px solid #000000;
+    border-radius: 13px;
+    font-family:cursive;
+    font-weight: bold;
+}
+
+.movie-ele:hover{
+    transition: all ease-out 0.3s;
+    transform: scale(1.2);
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.selector-seat{
+        margin-top: 54px;
+    font-size: 71px;
+    font-family: cursive;
+}
+
+#book-ticket-btn{
+        padding: 24px;
+    width: 352px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: cursive;
+    cursor: pointer;
+   background-color: rgb(40, 124, 124);
+    border-radius: 43px;
+    border: none;
+    transition: all ease-out 1s;
+}
+#book-ticket-btn:hover{
+     background: aqua;
+     transform: scale(1.02);
+}
+
+#confirm-purchase{
+        width: 832px;
+           background: linear-gradient(140deg, #2c4ca2 0%, #471478 50%, #8EC625 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    gap:44px;
+        border-radius: 84px;
+        color: white;
+        padding: 46px;
+    
+}
+#customer-detail-form{
+       display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: left;
+    
+}
+
+#confirm-purchase h3{
+        
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+label{
+       
+    font-size: 26px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+input{
+        border: none;
+    background: aquamarine;
+    width: 496px;
+    height: 29px;
+    border-radius: 5px;
+    margin: 8px 7px 1px 12px;
+    color: black;
+    font-size: 35px;
+    padding: 23px;
+  font-weight: bold;
+    font-family: cursive;
+    border: #b13232 5px solid;
+    border-radius: 23px;
+}
+
+#movie_submit_btn{
+    width: 139px;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all ease-out 1s;
+
+}
+#movie_submit_btn:hover{
+  transform: scale(1.1);
+  background-color: bisque;
+}
+
+.rate{
+    color: gold;
+}
+.ticket-horizontal {
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 40px auto;
+    background: #1e1e1e;
+    border-radius: 15px;
+    overflow: hidden;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    border: 2px solid #ff9800;
+}
+
+.ticket-left, .ticket-right {
+    padding: 25px 30px;
+    flex: 1;
+}
+
+.ticket-left {
+    border-right: 2px dashed #ff9800; /* Perforated edge effect */
+    background: linear-gradient(to right, #2a2a2a, #1e1e1e);
+}
+
+.ticket-left h2 {
+    font-size: 26px;
+    color: #ff9800;
+    margin-bottom: 15px;
+}
+
+.ticket-left p {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.ticket-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: #252525;
+}
+
+.ticket-right p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.ticket-right .ticket-msg {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4caf50;
+    font-weight: bold;
+}
+#download-ticket-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff9800, #ff6f00);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 152, 0, 0.6);
+    transition: all 0.3s ease;
+}
+
+#download-ticket-btn:hover {
+    background: linear-gradient(45deg, #ffb74d, #ff9800);
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 152, 0, 0.8);
+}
+
+#download-ticket-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 12px rgba(255, 152, 0, 0.5);
 }

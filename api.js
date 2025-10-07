@@ -1,9 +1,9 @@
 export const database = [
-    { name: '21 Jump Street', imgUrl: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLCqM8Ispa4waG8tNLPdy6rtiJFOEZUZxdzP-y_BQzfgo953Gb' },
-    { name: '22 Jump Street', imgUrl: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaoamRKQDYxVXvXg6LUl6brQmMdFbpZvOQ2G_nD6u5uq16tiVh' },
-    { name: 'Cars', imgUrl: 'https://upload.wikimedia.org/wikipedia/en/3/34/Cars_2006.jpg' },
-    { name: 'Cars 2', imgUrl: 'https://upload.wikimedia.org/wikipedia/en/7/7f/Cars_2_Poster.jpg' },
-    { name: 'Cars 3', imgUrl: 'https://lumiere-a.akamaihd.net/v1/images/p_cars3_19643_3ab8aca1.jpeg' }
+    { name: '21 Jump Street', imgUrl: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLCqM8Ispa4waG8tNLPdy6rtiJFOEZUZxdzP-y_BQzfgo953Gb', Date: `11-01-2024`, languege: `hindi`, hero: `Vjay`, rate: `250 INR`},
+    { name: '22 Jump Street', imgUrl: 'https://th.bing.com/th/id/R.9afb01c901dc6961a1d5646c68499b0b?rik=Liz06t7468JG2Q&riu=http%3a%2f%2fwww.impawards.com%2fintl%2findia%2f2023%2fposters%2fanimal.jpg&ehk=dOQrr30Ru%2bAqRVnRqtpScvj16xZKDKr8slmu1mAlbqk%3d&risl=&pid=ImgRaw&r=0',Date: `01-08-2026`, languege: `english`, hero: `Shiva ji`, rate: `250 INR` },
+    { name: 'Cars', imgUrl: 'https://upload.wikimedia.org/wikipedia/en/3/34/Cars_2006.jpg', Date: `02-08-2008`, languege: `tamil`, hero: `Radhika`, rate: `250 INR`},
+    { name: 'Cars 2', imgUrl: 'https://upload.wikimedia.org/wikipedia/en/7/7f/Cars_2_Poster.jpg', Date: `12-12-2005`, languege: `hindi`, hero: `Ajay devgan`, rate: `250 INR` },
+    { name: 'Cars 3', imgUrl: 'https://image.tmdb.org/t/p/original/riNhv1BdFSCSiIxAtGmFM9yrhms.jpg',Date: `05-04-2009`, languege: `hindi`, hero: `Amitab Bacchan`, rate: `250 INR` }
 ]
 export const availibility = {
     '21 Jump Street': [1, 2, 5, 8, 9,19,22,20,11],
