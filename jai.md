@@ -1,5 +1,3 @@
-# Movie-Booking-JS---DOM-Manipulation-JS-Changing-this-call-bind-apply---Post---
-
 First step in the website will be making a nav bar using flex.
 Inside the nav you will have a div with classname logo and a list 
 for displaying the respective links as in the mock UI. 
@@ -7,7 +5,7 @@ Use flexbox in nav to display the logo and list of links on the opposite side of
 and also use flexbox in the list inside the nav also, to evenly space the links.
 
 Give nav a padding of <code>12px 16px</code>.
-All the text on nav should have white for font color, so apply the property on nav itself.
+All the text on nav should have white for font color, so apply the property on nav itself. // 
 
 You will be using the API functions in <code>api.js</code> file to fetch the relevant data.
 When page loads,make a request to get list of all movies using <code>fetchMovieList</code> function.
@@ -23,15 +21,15 @@ Inside that div we will be adding the individual movie components.
 Each individual movie component will be made up of an anchor tag on the outside with class .movie-link.
 Example of the basic strucutre is given below. Replace moviename by actual name of the rendered movie
 <code>
-    &lt;a class="movie-link" href="/moviename">
-        &lt;div class="movie" data-id="moviename">
-            &lt;div class="movie-img-wrapper">   
-            &lt;/div>
-            &lt;h4>$moviename&lt;/h4>
-        &lt;/div>
-    &lt;/a>
+    <a class="movie-link" href="/moviename">
+         <div class="movie" data-id="moviename">
+             <div class="movie-img-wrapper">   
+             </div>
+             <h4>$moviename</h4>
+         </div>
+    </a>
 </code>
-movie-img-wrapper will have css, background image property set to the imgUrl of the movie and background size as    cover.
+movie-img-wrapper will have css, background image property set to the imgUrl of the movie and background size as cover.
 
 index.html has markup defined for #booker class, which will hold elements related to seat booking.
 Upon clicking the movie-link, the app loads data from the <code>fetchMovieAvailability</code> using moviename 
@@ -68,3 +66,4 @@ seat numbers, email and phone number.
 Terminal :
 
 git clone <REPO_NAME>
+
