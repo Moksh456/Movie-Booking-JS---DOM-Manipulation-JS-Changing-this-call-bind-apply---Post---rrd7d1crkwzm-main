@@ -294,7 +294,7 @@ input{
 .ticket-horizontal {
     display: flex;
     justify-content: space-between;
-    max-width: 700px;
+    max-width: 1017px;
     margin: 40px auto;
     background: #1e1e1e;
     border-radius: 15px;
@@ -303,6 +303,8 @@ input{
     color: #fff;
     box-shadow: 0 10px 25px rgba(0,0,0,0.7);
     border: 2px solid #ff9800;
+        width: 936px;
+    height: 294px;
 }
 
 .ticket-left, .ticket-right {
